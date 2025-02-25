@@ -1,0 +1,13 @@
+version: "3.8" # Specifies the version of the Docker Compose file format
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile # Use the official Node.js image
+    image: "netflix-clone-app-react-typescript-app:latest"
+    container_name: netflix-node # Name of the container
+    ports:
+      - "9999:80" # Expose port 3000 on the host to port 3000 in the container
+    env_file:
+      - .env

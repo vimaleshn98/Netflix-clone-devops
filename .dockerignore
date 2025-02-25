@@ -1,0 +1,46 @@
+# Ignore node_modules (we'll install them inside the container)
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore the build output folder (e.g., dist or build)
+dist/
+build/
+
+# Ignore temporary files and editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.DS_Store
+
+# Ignore git-related files
+.git/
+.gitignore
+
+# Ignore Docker files (optional, if not needed)
+.dockerignore
+Dockerfile
+
+# Ignore the environment variable files
+# .env
+# .env.local
+# .env.production
+# .env.development
+# The issue you're encountering is likely due to how environment variables are handled in Vite, Docker,
+
+# Ignore test and coverage files
+coverage/
+tests/
+
+# Ignore package-lock.json or yarn.lock files if you want to ignore them (optional)
+# package-lock.json
+# yarn.lock
+
+# Ignore any IDE or editor configuration folders (e.g., VSCode, IntelliJ)
+.vscode/
+.idea/
+
+# Ignore Firebase project files and directories
+.firebase/
